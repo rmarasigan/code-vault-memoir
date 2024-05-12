@@ -7,5 +7,9 @@ Code Vault Memoir is a compilation of 'How-To's', notes, or summaries related to
 ## Table of Contents
 * [**AWS**](aws/)
   * [Update the CDK Context](aws/update-cdk-context.md)
+  * [Update the AWS CDK Stack v1 to v2](aws/update-cdk-to-v2.md)
+* [**Git**](git/)
+  * [Pushing Changes to an `x` Branch](git/push-changes-to-x-branch.md)
+  * [Switch Branches](git/switch-branches.md)
 * [**Go**](go/)
   * [Bump Go Version](go/bump-go-version.md)
