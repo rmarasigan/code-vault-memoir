@@ -6,7 +6,7 @@
     dev@dev:~$ node --version
     ```
 
-    * If Node.js is not installed on your machine, download an import the Nodesource GPG key.
+    * If Node.js is not installed on your machine, download and import the Nodesource GPG key.
 
       ```bash
       dev@dev:~$ sudo apt-get update
