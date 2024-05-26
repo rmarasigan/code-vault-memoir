@@ -17,6 +17,7 @@ The `master` or `main` branch in Git is a repository's default and primary branc
     > Ensure you are on the branch you want to merge into.
 
 2. Merge the `y` branch into `master` branch
+    
     This will merge the `[branch-name]` to the current branch.
 
     ```bash
