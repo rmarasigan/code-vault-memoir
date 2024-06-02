@@ -1,4 +1,4 @@
-# 💭 Merging `x` branch to an `y` branch
+# 💭 Merging `x` branch to `y` branch
 
 `git merge` combines changes from two branches. Its primamry purpose is to integrate changes made in one branch (*source branch*) into another (*target branch*) and share those changes with other developers.
 

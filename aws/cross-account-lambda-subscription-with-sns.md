@@ -38,7 +38,7 @@ Make sure that:
 
     > **ℹ️ NOTE**
     >
-    > The Lambda Function creates an *execution role* that gants the function permission to upload logs to Amazon CloudWatch.
+    > The Lambda Function creates an *execution role* that grants the function permission to upload logs to Amazon CloudWatch.
 
 4. Grant the SNS service principal permission
 
@@ -58,8 +58,8 @@ Make sure that:
     > lambdaFn.AddPermission(jsii.String("AllowSNSToInvokeFunction"),
     >		&awslambda.Permission{
     > 			Action:    jsii.String("lambda:InvokeFunction"),
-		> 			SourceArn: jsii.String("arn:aws:sns:<account_a_region>:<account_a_id>:<sns_topic_name>"),
-		> 			Principal: awsiam.NewServicePrincipal(jsii.Sprintf("sns.amazonaws.com"), &awsiam.ServicePrincipalOpts{}),
+    > 			SourceArn: jsii.String("arn:aws:sns:<account_a_region>:<account_a_id>:<sns_topic_name>"),
+    > 			Principal: awsiam.NewServicePrincipal(jsii.Sprintf("sns.amazonaws.com"), &awsiam.ServicePrincipalOpts{}),
     >		})
     >```
 
@@ -69,7 +69,6 @@ Make sure that:
 dev@dev:~/your-project$ aws sns subscribe --topic-arn <sns_arn> \
 --protocol lambda --notification-endpoint arn:aws:lambda:<account_b_region>:<account_b_id>:function:<lambda-fn-name> \
 --profile <account_b_profile> \
---region <account_b_region>
 ```
 
 <br />
@@ -82,3 +81,4 @@ dev@dev:~/your-project$ aws sns subscribe --topic-arn <sns_arn> \
 ## 📋 Related Articles
 - [Invoke Lambda using SNS from Outside Account](https://stackoverflow.com/questions/34749310/invoke-lambda-using-sns-from-outside-account)
 - [How do I set up a cross-account AWS Lambda subscription with an SNS topic?](https://repost.aws/knowledge-center/sns-with-crossaccount-lambda-subscription)
+- [Why do I get an authorization error when I try to subscribe my Lambda function to my Amazon SNS topic?](https://repost.aws/knowledge-center/sns-authorization-error-lambda-function)
