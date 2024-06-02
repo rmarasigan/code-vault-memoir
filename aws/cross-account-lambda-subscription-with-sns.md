@@ -1,4 +1,4 @@
-# 💭 Cross-account AWS Lambda subscription with an SNS topic
+# 💭 Cross Account AWS Lambda Subscription with an SNS topic
 
 Make sure that:
 * The **SNS Topic (*Account A*)** access policy allows Lambda to subscribe to the topic

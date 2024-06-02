@@ -8,6 +8,7 @@ Code Vault Memoir is a compilation of 'How-To's', notes, or summaries related to
 * [**AWS**](aws/)
   * [Athena DynamoDB Connector Cross-Account](aws/athena-dynamodb-connector-cross-acct.md)
   * [Cross Account Deployments with CDK Pipelines](aws/cross-account-deployments-cdk-pipelines.md)
+  * [Cross Account AWS Lambda Subscription with an SNS topic](aws/cross-account-lambda-subscription-with-sns.md)
   * [S3 Bucket Lifecycle Configuration](aws/s3-bucket-lifecycle.md)
   * [Update the CDK Context](aws/update-cdk-context.md)
   * [Update the AWS CDK Stack v1 to v2](aws/update-cdk-to-v2.md)
