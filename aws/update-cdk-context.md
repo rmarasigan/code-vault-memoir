@@ -23,8 +23,6 @@ From the [best practices](https://docs.aws.amazon.com/cdk/v2/guide/best-practice
     dev@dev:~/your-project$ cdk synth --profile YOUR_AWS_PROFILE_NAME
     ```
 
-    <br />
-
     If you open the `cdk.context.json` file in the root of your project, you'll see that the CDK has cached the values that correspond to your stack's configuration.
 
 ## 📋 Related Articles
