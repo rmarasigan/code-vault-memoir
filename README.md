@@ -32,6 +32,7 @@ Code Vault Memoir is a compilation of 'How-To's', notes, or summaries related to
 * [Linux MySQL 8.0.35 Reset Password](mysql/mysql-reset-password.md)
 
 ### Node.js
+* [Linux Node.js Installation](nodejs/node-installation.md)
 * [Linux Uninstall Node.js](nodejs/uninstall-nodejs.md)
 
 ### TypeScript
