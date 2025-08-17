@@ -39,10 +39,9 @@
     * **Password Validation**
 
         If it skips setting a password and uses OS credentials instead:
-
-          * The root user logs in without providing a password (`sudo mysql`). In this case, the authentication method `auth_socket` is used by default. This means root can log in without a password but only when connected locally through the root or `sudo` user.
-          
-          * External applications or GUI tools cannot connect as root with a password unless root's authentication is changed (not recommended).
+        * The root user logs in without providing a password (`sudo mysql`). In this case, the authentication method `auth_socket` is used by default. This means root can log in without a password but only when connected locally through the root or `sudo` user.
+        
+        * External applications or GUI tools cannot connect as root with a password unless root's authentication is changed (*not recommended*).
 
     * **Remove Anonymous Users**
 
