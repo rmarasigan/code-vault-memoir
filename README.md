@@ -17,6 +17,7 @@ Code Vault Memoir is a compilation of 'How-To's', notes, or summaries related to
 * [Validate Changes via AWS CDK Locally](aws/validate-changes-via-aws-cdk-locally.md)
 
 ### Git
+* [Linux Git Installation](git/git-installation.md)
 * [Delete 'Squash & Merged' Branch Locally](git/delete-squash-merged-branch-locally.md)
 * [Merging `x` branch to `y` branch](git/merge-branches.md)
 * [Pushing Changes to an `x` Branch](git/push-changes-to-x-branch.md)
