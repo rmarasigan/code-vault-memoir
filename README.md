@@ -23,6 +23,7 @@ Code Vault Memoir is a compilation of 'How-To's', notes, or summaries related to
 * [Switch Branches](git/switch-branches.md)
 
 ### Golang
+* [Linux Go Installation](go/go-installation.md)
 * [Bump Go Version](go/bump-go-version.md)
 * [DynamoDB with AWS Go SDK](go/dynamodb-with-aws-go-sdk.md)
 
