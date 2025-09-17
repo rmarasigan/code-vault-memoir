@@ -19,8 +19,8 @@ Historically, the timeout for manual approval actions was fixed at 7 days and no
 
 You cannot reject again with an old token. Instead, stop the stale execution.
 
-1. Log in to the AWS Management Console
-2. Go to the **CodePipline** → **Pipelines** → **`<Your-Pipeline>`** → **Execution history**
+1. Log in to the AWS Management Console.
+2. Go to the **CodePipline** → **Pipelines** → **`<Your-Pipeline>`** → **Execution history**.
 3. Select the old execution (the commit stuck in approval).
 3. Click **Stop execution**.
 4. Choose **Stop and Abandon**.
