@@ -4,9 +4,9 @@
 2. Choose the **Management** tab, and choose the **Create lifecycle rule**.
 3. In the **Lifecycle rule name**, enter a name for your rule.
 
-    > **ℹ️ NOTE**
-    >
-    > The name must be unique within the bucket.
+> [!NOTE]
+>
+> The name must be unique within the bucket.
 
 4. Choose the scope of the lifecycle rule:
 

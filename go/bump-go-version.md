@@ -8,11 +8,9 @@ To update the Go version used in your project, follow these steps:
     dev@dev:~/your-project$ go mod edit -go=[your-go-version]
     ```
 
-    <br />
-
-    > **ℹ️ NOTE**
-    >
-    > Remember to replace `[your-go-version]` with your target Go version.
+> [!NOTE]
+>
+> Remember to replace `[your-go-version]` with your target Go version.
 
 2. Update modules and the dependencies to ensure that all dependencies are up-to-date
 
@@ -36,9 +34,9 @@ To update the Go version used in your project, follow these steps:
 
     <br />
 
-    > **ℹ️ NOTE**
-    >
-    > Remember to replace `[your-go-version]` with your target Go version.
+> [!NOTE]
+>
+> Remember to replace `[your-go-version]` with your target Go version.
 
 2. Set the private repository and ensure that you are authenticated to access them
 

@@ -10,11 +10,9 @@ The `master` or `main` branch in Git is a repository's default and primary branc
     dev@dev:~/your-project$ git switch master
     ```
 
-    <br />
-
-    > **ℹ️ NOTE**
-    >
-    > Ensure you are on the branch you want to merge into.
+> [!NOTE]
+>
+> Ensure you are on the branch you want to merge into.
 
 2. Merge the `y` branch into `master` branch
     
@@ -24,13 +22,11 @@ The `master` or `main` branch in Git is a repository's default and primary branc
     dev@dev:~/your-project$ git merge [branch-name]
     ```
 
-    <br />
-
-    > **ℹ️ NOTE**
-    >
-    > Remember to replace `[branch-name]` with your branch name (e.g. `develop`).
-    >
-    > Example: `git merge develop`
+> [!NOTE]
+>
+> Remember to replace `[branch-name]` with your branch name (e.g. `develop`).
+>
+> Example: `git merge develop`
 
 3. Push the local changes to the remote repository
 

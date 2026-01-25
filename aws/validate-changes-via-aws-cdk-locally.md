@@ -90,13 +90,11 @@
           Value: !GetAtt TasksTable.Arn
       ```
 
-      <br />
-
-      > **ℹ️ NOTE**
-      >
-      > Some people use the `cdk synth` with `deploy` because it is a **good practice**. 
-      >
-      > It is optional (though a good practice) to synthesize before deploying. The AWS CDK synthesizes your stack before each deployment.
+> [!NOTE]
+>
+> Some people use the `cdk synth` with `deploy` because it is a **good practice**. 
+>
+> It is optional (though a good practice) to synthesize before deploying. The AWS CDK synthesizes your stack before each deployment.
 
 ## 📋 Related Articles
 - [AWS CDK Toolkit](https://github.com/aws/aws-cdk/blob/main/packages/aws-cdk/README.md)

@@ -6,11 +6,9 @@
     dev@dev:~/your-project$ git branch --show-current
     ```
 
-    <br />
-
-    > 🔔 **REMEMBER**
-    >
-    > This will show you the current branch you are in.
+> [!TIP]
+>
+> This will show you the current branch you are in.
 
 2. Stage all the changes in the current directory and its subdirectories
 
@@ -30,11 +28,9 @@
     dev@dev:~/your-project$ git commit -m "YOUR_COMMIT_MESSAGE"
     ```
 
-    <br />
-
-    > **ℹ️ NOTE**
-    >
-    > Remember to replace `YOUR_COMMIT_MESSAGE` with your commit message.
+> [!NOTE]
+>
+> Remember to replace `YOUR_COMMIT_MESSAGE` with your commit message.
 
 5. Send the committed changes to the current branch
 

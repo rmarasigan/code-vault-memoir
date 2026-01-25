@@ -37,7 +37,7 @@ If a Pull Request has been merged (*Squash and Merge*) and the branch has been d
 
 <br />
 
-> **💡 KEY POINTS**
+> [!TIP]
 >
 > The **Squash and Merge** combines multiple commits from a pull request into a single commit. This removes the individual commit history, leaving you only a single commit with a combined message. If your team/organization prefers a clean, simple and readable Git history, **Squash and Merge** is better.
 

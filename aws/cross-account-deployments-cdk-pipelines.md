@@ -38,7 +38,7 @@ $ npx cdk bootstrap \
     aws://<account_b_id>/<region>
 ```
 
-> **ℹ️ NOTE**
+> [!NOTE]
 >
 > `npx` means to use the CDK CLI from the current NPM install. If you are using a global install of the CDK CLI, leave this out.
 

@@ -8,11 +8,11 @@
 
     <br />
 
-    > **ℹ️ NOTE**
-    >
-    > Remember to replace `[branch-name]` with your branch name (e.g. develop).
-    >
-    > Example: `git switch develop`
+> [!NOTE]
+>
+> Remember to replace `[branch-name]` with your branch name (e.g. develop).
+>
+> Example: `git switch develop`
 
 2. To check in which branch you are in
 

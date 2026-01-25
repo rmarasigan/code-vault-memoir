@@ -24,21 +24,19 @@ Make sure that:
     }
     ```
 
-    <br />
-
-    > **ℹ️ NOTE**
-    >
-    > Remember to replace `<account_b>` with your AWS Account number that has the Lambda Function.
-    > For the `<sns_topic_arn>`, replace it with your Amazon Resource Name (ARN) of the SNS topic.
+> [!NOTE]
+>
+> Remember to replace `<account_b>` with your AWS Account number that has the Lambda Function.
+> For the `<sns_topic_arn>`, replace it with your Amazon Resource Name (ARN) of the SNS topic.
 
 ### Create a Lambda Function
 1. Log in to the AWS Management Console, go to **AWS Lambda**, then choose **Create function**
 2. Enter the **Function name**
 3. For **Execution role**, choose **Create a new role with basic Lambda permissions**
 
-    > **ℹ️ NOTE**
-    >
-    > The Lambda Function creates an *execution role* that grants the function permission to upload logs to Amazon CloudWatch.
+> [!NOTE]
+>
+> The Lambda Function creates an *execution role* that grants the function permission to upload logs to Amazon CloudWatch.
 
 4. Grant the SNS service principal permission
 
@@ -71,9 +69,7 @@ dev@dev:~/your-project$ aws sns subscribe --topic-arn <sns_arn> \
 --profile <account_b_profile> \
 ```
 
-<br />
-
-> 🔔 **REMEMBER**
+> [!NOTE]
 >
 > Remember to replace `<account_b_*>` with your AWS Account Region, ID and Profile name that has the Lambda Function.
 > For the `<sns_arn>`, replace it with your Amazon Resource Name (ARN) of the SNS topic.

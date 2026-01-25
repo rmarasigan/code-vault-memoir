@@ -27,11 +27,9 @@
     dev@dev:~/your-project$ export AWS_REGION=YOUR_AWS_REGION
     ```
 
-    <br />
-
-    > **ℹ️ NOTE**
-    >
-    > Make sure to export the necessary AWS environment variables, replacing the `YOUR_AWS_PROFILE` and `YOUR_AWS_REGION` with your actual AWS profile and region.
+> [!NOTE]
+>
+> Make sure to export the necessary AWS environment variables, replacing the `YOUR_AWS_PROFILE` and `YOUR_AWS_REGION` with your actual AWS profile and region.
 
 4. Build and execute the Go file.
 
