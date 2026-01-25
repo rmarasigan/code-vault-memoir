@@ -14,7 +14,7 @@
 * [Three Dots Labs Blog](https://threedots.tech/post/)
 * [Golang Practical Tips](https://github.com/func25/go-practical-tips/blob/main/tips.md)
 * [Schichao Notes - GOPL](https://notes.shichao.io/gopl/)
-* [Programming Guide: Go]([text](https://programming.guide/go/))
+* [Programming Guide: Go](https://programming.guide/go/)
 * [Getting Started with Go](https://tutorialedge.net/golang/getting-started-with-go/)
 * [Anatomy of a Go Program](https://dev.to/vigneshm243/anatomy-of-a-go-program-18m6)
 * [Go Code Review Comments](https://github.com/golang/go/wiki/CodeReviewComments)
