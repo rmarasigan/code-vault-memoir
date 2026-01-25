@@ -1,10 +1,14 @@
 # 💭 Golang Resources
 
 * [AWS SDK v2](https://aws.github.io/aws-sdk-go-v2/docs/getting-started/)
+* [Tour of Go](https://go.dev/tour/welcome/1)
 * [Go Cookbook](https://go-cookbook.com/)
+* [Learn Golang](https://www.learn-golang.org/)
 * [Go go-to guide](https://yourbasic.org/golang/)
 * [Applied Go Blog](https://appliedgo.net/)
+* [Go Web Examples](https://gowebexamples.com/)
 * [Ultimate Go Tour](https://tour.ardanlabs.com/tour/eng/list)
+* [How to Code in Go](https://www.digitalocean.com/community/tutorial_series/how-to-code-in-go)
 * [Common Go Mistakes](https://100go.co/)
 * [Organizing Go Code](https://go.dev/talks/2014/organizeio.slide#1)
 * [Go Style Decisions](https://google.github.io/styleguide/go/decisions)
@@ -19,6 +23,7 @@
 * [Anatomy of a Go Program](https://dev.to/vigneshm243/anatomy-of-a-go-program-18m6)
 * [Go Code Review Comments](https://github.com/golang/go/wiki/CodeReviewComments)
 * [Go App Optimization Guide](https://goperf.dev/)
+* [Introduction to Functions](https://www.callicoder.com/golang-functions/)
 * [How to Update the Go Version](https://gist.github.com/nikhita/432436d570b89cab172dcf2894465753)
 * [An Introduction to Testing in Go](https://tutorialedge.net/golang/intro-testing-in-go/)
 * [Comprehensive Guide to Testing in Go](https://blog.jetbrains.com/go/2022/11/22/comprehensive-guide-to-testing-in-go/)
