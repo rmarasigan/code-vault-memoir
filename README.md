@@ -43,4 +43,7 @@ Code Vault Memoir is a compilation of 'How-To's', notes, or summaries related to
 ## Resources
 * [AWS](resources/aws-resources.md)
 * [Git](resources/git-resources.md)
+* [Linux](resources/linux-resources.md)
 * [Golang](resources/golang-resources.md)
+* [Blog / Articles](resources/blogs-articles.md)
+* [Refactoring / Design Patterns / System Design](resources/refactoring-design-patterns-system-design.md)
