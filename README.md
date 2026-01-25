@@ -39,3 +39,8 @@ Code Vault Memoir is a compilation of 'How-To's', notes, or summaries related to
 
 ### TypeScript
 * [Linux Installation](typescript/linux-installation.md)
+
+## Resources
+* [AWS](resources/aws-resources.md)
+* [Git](resources/git-resources.md)
+* [Golang](resources/golang-resources.md)
