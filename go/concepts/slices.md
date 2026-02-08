@@ -118,7 +118,7 @@
         ```
     - Using `range` in the `for` loop, you can get the index and the element value
 - **Using a blank (`_`) identifier in `for` loop**
-    - If you don’t want to get the index value of the elements, then you can use blank space (`_`) in place of index variable
+    - If you don't want to get the index value of the elements, then you can use blank space (`_`) in place of index variable
         ```go
         slice := []string{"This", "is", "the", "tutorial", "of", "Go", "language"}
         
@@ -156,7 +156,7 @@
     ```
     
 ## Deleting from a Slice
-- To delete an element from a slice, we can’t directly remove an element from it, we need to perform certain copying of all elements in a different location and then relocate them to a new position in the original slice
+- To delete an element from a slice, we can't directly remove an element from it, we need to perform certain copying of all elements in a different location and then relocate them to a new position in the original slice
 - **Using the `append` function to delete an element**
     - We delete or remove the element by referencing its index of it in the slice
     - We have to used the `append` function which will take two parameters
@@ -293,7 +293,7 @@
 > 	fmt.Printf("x: %v    y: %v") // Output: x: [100 4 6 8 10] y: [100 4 6 8 10]
 > 	```
 > 	
-> 	- They both point to the same memory for the actual elements — the “indirect part” (the underlying array) is shared
+> 	- They both point to the same memory for the actual elements — the "indirect part" (the underlying array) is shared
 > 
 > - To make a true copy, we use the `copy()` function
 > 	```go

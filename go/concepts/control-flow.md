@@ -29,8 +29,8 @@
 - This makes it easier to write complex programs without worrying about manual memory management
 - Uses a technique known as **concurrent mark and sweep** to identify and reclaim unused memory
     - Involves **marking** all live objects in memory and then **sweeping** through memory to reclaim unused memory
-- The act of allocating memory on the heap is typically referred as “dynamic memory allocation” because both the compiler and the runtime can make very few assumptions as to how this memory is used and when it can be cleaned up
-    - The “heap” can be thought of as a catch-all for memory allocation, for when Go values need to be placed _somewhere_
+- The act of allocating memory on the heap is typically referred as "dynamic memory allocation" because both the compiler and the runtime can make very few assumptions as to how this memory is used and when it can be cleaned up
+    - The "heap" can be thought of as a catch-all for memory allocation, for when Go values need to be placed _somewhere_
 
 #### Tracing Garbage Collection
 - **Object**
@@ -38,7 +38,7 @@
 - **Pointer**
     - A memory address that references any value within an object (`*T`)
 - Objects and pointers to other objects form the _**object graph**_
-- To identify live memory, the GC walks the object graph starting at the program’s roots, pointers that identify objects that are definitely in-use by the program
+- To identify live memory, the GC walks the object graph starting at the program's roots, pointers that identify objects that are definitely in-use by the program
     - **Scanning** — the process of walking the object graph
     - Two examples of roots: Local and Global Variables
 - **Mark-Sweep Technique**
@@ -49,9 +49,9 @@
 - **Understanding Costs**
     - Consider this model of GC Cost:
         - GC involves only two resources: **Physical Memory** and **CPU Time**
-        - GC’s memory costs consists of _live heap memory_, _new heap memory allocated before the mark phase_, and _space for metadata_ that, even if proportional to the previous costs, are small in comparison
+        - GC's memory costs consists of _live heap memory_, _new heap memory allocated before the mark phase_, and _space for metadata_ that, even if proportional to the previous costs, are small in comparison
             - `GC Memory Cost for Cycle N = Live Heap from Cyle N-1 + New Heap`
-        - GC’s CPU costs are modeled as a fixed cost per cycle, and a marginal cost that scales proportionally with the size of the live heap
+        - GC's CPU costs are modeled as a fixed cost per cycle, and a marginal cost that scales proportionally with the size of the live heap
             - `GC CPU Time for Cycle N = Fixed CPU Time Cost Per Cycle + Average CPU Time Cost Per Byte * Live Heap Memory found in Cycle N`
 - **`GOGC`**
     - It works by determining the target heap size after each GC cycle, a target value for the total heap size in the next cycle
@@ -64,14 +64,14 @@
             - Makes GC run more often, keeping memory (RAM) usage low but increasing CPU work
 - **Memory Limit**
     - Sets a maximum on the _total amount of memory that the Go runtime can use_
-    - The use of memory limit does not come without a cost, and certainly doesn’t invalidate the utility of `GOGC`
+    - The use of memory limit does not come without a cost, and certainly doesn't invalidate the utility of `GOGC`
     - Can be configured either via the `GOMEMLIMIT` environment, or through the `SetMemoryLimit` function in the `runtime/debug` package
     - **Suggested Uses**
         - **Do** take advantage of the memory limit when the execution environment of your program is entirely within your control
-        - **Do** f’eel free to adjust the memory limit in real-time to adapt to changing conditions
-        - **Don’t** set `GOGC` to off with a memory limit if your program might share some of its limited memory with other programs
-        - **Don’t** use the memory limit when deploying to an execution environment you don’t control
-        - **Don’t** set a memory limit to avoid out-of-memory conditions when a program is already close to its environment’s memory limits
+        - **Do** f'eel free to adjust the memory limit in real-time to adapt to changing conditions
+        - **Don't** set `GOGC` to off with a memory limit if your program might share some of its limited memory with other programs
+        - **Don't** use the memory limit when deploying to an execution environment you don't control
+        - **Don't** set a memory limit to avoid out-of-memory conditions when a program is already close to its environment's memory limits
 
 ### Memory Management
 - The runtime system includes a memory allocator that manages the allocation and deallocation of memory used by a program

@@ -1,6 +1,6 @@
 # Channels
 
-## Communicating Sequential Process (CSP)
+### Communicating Sequential Process (CSP)
 The concepts of goroutines and channels in Go are inspired by _Communicating Sequential Processes (CSP)_, a formal concurrency model developed by Tony Hoare. CSP describes systems as collections of independent processes that interact solely through message passing.
 
 This maps directly to goroutines (independent processes) communicating via channels (message passing).
@@ -271,7 +271,7 @@ This maps directly to goroutines (independent processes) communicating via chann
 	}
 	```
 
-> [!NOTES]
+> [!NOTE]
 > * Leaving a channel open after finishing all sends causes `range` to block forever.
 > * Only the sending side should close a channel.
 

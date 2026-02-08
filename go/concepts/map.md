@@ -117,7 +117,7 @@
     ```go
     value := yourMap[key]
     ```
-- If the **key does not exist**, it will **return the zero value** for the map’s value type
+- If the **key does not exist**, it will **return the zero value** for the map's value type
     ```go
     value := yourMap[4] // "", empty stirng
     ```
@@ -145,7 +145,7 @@
     ```
 
 > [!NOTE]
-> Don’t use zero value to determine if a key exists in the map or not, since zero value may be valid and what was actually stored for the key
+> Don't use zero value to determine if a key exists in the map or not, since zero value may be valid and what was actually stored for the key
 
 ### Deleting a Key
 - There is a built-in function named `delete` that allows for the deletion of data from the map based on a key
@@ -157,7 +157,7 @@
     delete(yourMap, 1)
     ```
     
-- The `delete` function doesn’t return anything, and will do nothing if the specified key doesn’t exist
+- The `delete` function doesn't return anything, and will do nothing if the specified key doesn't exist
 
 ### Modifying Maps
 - Since maps are reference types, assigning one map to another variable will not create a copy but will instead reference the same underlying data structure
@@ -204,7 +204,7 @@ for index := range slice {
 
 > [!NOTE]
 > - [**Maps are not safe for concurrent use**](https://go.dev/doc/faq#atomic_maps)
-> 	- It’s not defined what happens when you read and write to them simultaneously
+> 	- It's not defined what happens when you read and write to them simultaneously
 > 	- One common way to protect maps is with [sync.RWMutex](https://go.dev/pkg/sync/#RWMutex)
 > 
 > ```go

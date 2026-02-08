@@ -2,7 +2,7 @@
 - **Collection of elements** that belong to the same type
 - Allows us to **allocate contiguous blocks** of **fixed-size memory**
 - Fixed size and store elements of the same type in contiguous memory locations
-    - This means that we can access each element quickly since their addresses are calculated based on the starting address of the array and the element’s index
+    - This means that we can access each element quickly since their addresses are calculated based on the starting address of the array and the element's index
 - **Are value types and not reference types**
     - This means that when they are assigned to a new variable, a copy of the original array is assigned to the new variable
     - If changes are made to the new variable, it will not be reflected in the original array
@@ -91,7 +91,7 @@
         fmt.Println(i, fruit)
     }
     ```
-    - The collection that we’re iterating over is copied and we iterate over the copy
+    - The collection that we're iterating over is copied and we iterate over the copy
 - **Pointer Semantic Iteration**
     ```go
     fruits := [5]string{"Apple", "Orange", "Banana", "Grape", "Plum"}

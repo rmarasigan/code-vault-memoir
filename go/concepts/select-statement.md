@@ -71,9 +71,9 @@ func main() {
 }
 ```
 
-During the first 10500 milliseconds (10.5 seconds), the first case of the `select` statement will not be ready since the `process` goroutine will write to the `ch` channel only after 10500 milliseconds. Hence, the `default` case will be executed during this time and the program will print ‘`no value received`’ 10 times.
+During the first 10500 milliseconds (10.5 seconds), the first case of the `select` statement will not be ready since the `process` goroutine will write to the `ch` channel only after 10500 milliseconds. Hence, the `default` case will be executed during this time and the program will print ‘`no value received`' 10 times.
 
-After 10.5 seconds, the `process` goroutine writes ‘`process successful`' to `ch`. Now the first case of the select statement will be executed and the program will print ‘`received value: process successful`’ and then it will terminate.
+After 10.5 seconds, the `process` goroutine writes ‘`process successful`' to `ch`. Now the first case of the select statement will be executed and the program will print ‘`received value: process successful`' and then it will terminate.
 
 ```
 no value received
@@ -126,7 +126,7 @@ func main() {
 ```
 
 #### Gotcha — Empty Select
-The select statement will block until one of its cases is executed. In here, the select statement doesn’t have any cases and hence it will block forever resulting in a deadlock.
+The select statement will block until one of its cases is executed. In here, the select statement doesn't have any cases and hence it will block forever resulting in a deadlock.
 
 ```go
 func main() {

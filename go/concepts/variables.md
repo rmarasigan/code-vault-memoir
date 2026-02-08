@@ -74,7 +74,7 @@ func main() {
 }
 ```
 
-**For more info: [Understanding Scope](https://www.notion.so/Understanding-Scope-1953c7ef4afb806ba678fcb89ac6006f?pvs=21)**
+**For more info: [Understanding Scope](understanding-scope.md)**
 ## Built-In Types
 - It can be specific to a precision such as `int32` or `int64`
     - `uint8` = unsigned integer with 1 byte of allocation

@@ -71,7 +71,7 @@ default:
 ## Fallthrough
 - The control comes out of the `switch` statement immediately after a case is executed
 - `fallthrough` statement is used to transfer control to the first statement of the case that is present immediately after the case which has been executed
-- `fallthrough` should be the last statement in a `case`, if it is present somewhere in the middle, the compiler will complain that ‘`fallthrough statement out of place`’
+- `fallthrough` should be the last statement in a `case`, if it is present somewhere in the middle, the compiler will complain that ‘`fallthrough statement out of place`'
 - Cannot be used in the last case of a `switch` since there are no more cases to fallthrough
 
 ```go
@@ -141,7 +141,7 @@ case num < 200:
 }
 ```
 
-When it reaches the `if` statement, the condition is satisfied since `num < 0`. The `break` statement terminates the `switch` before it completes and the program doesn’t print anything.
+When it reaches the `if` statement, the condition is satisfied since `num < 0`. The `break` statement terminates the `switch` before it completes and the program doesn't print anything.
 
 ## Breaking the Outer `for` Loop
 - It can be done by **labeling** the `for` loop and breaking the `for` loop using that label inside the `switch` statement

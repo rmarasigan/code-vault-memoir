@@ -1,7 +1,7 @@
 # `for` Statement
 
 - A loop is used to execute a block of code repeatedly until a condition is satisfied
-- Go doesn’t have `while` or `do while` loops which are present in other languages like C
+- Go doesn't have `while` or `do while` loops which are present in other languages like C
 
 #### Syntax
 ```go
@@ -20,7 +20,7 @@ Where:
 - **`post`**
     - It will be executed after each successful iteration of the loop
     - After the `post` statement is executed, the condition will be rechecked
-    - If it’s true, the loop will continue executing, else the `for` loop terminates
+    - If it's true, the loop will continue executing, else the `for` loop terminates
 
 #### Example
 ```go

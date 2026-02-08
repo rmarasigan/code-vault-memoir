@@ -17,7 +17,7 @@
 
 ### Asynchronous / Asymmetric Encryption
 - One of the most common cryptographic methods that involve using a single key and its pendent, where one key is used to encrypt data and the second one is used to decrypt an encrypted text
-- The second key is kept highly secret, while the first one which is called a **public key** can be freely distributed among the service’s users
+- The second key is kept highly secret, while the first one which is called a **public key** can be freely distributed among the service's users
 - It requires two keys, a **public key** for encryption and a **private key** for decryption
 - The encryption process is slow but it is **more secure than symmetric encryption**
 - Common algorithms include RSA, Elliptic Curve Cryptography (ECC), DSA, Diffie-Hellman, etc.

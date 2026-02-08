@@ -4,7 +4,7 @@
 - It is important because it ensures that all required libraries and packages are available and compatible with each other and that any updates or changes to those dependencies are managed and controlled to prevent issues that could arise due to conflicting versions or changes
 - The most common dependency management steps:
     - Import the packages you want in your code
-    - Add your code to a module for dependency tracking (if it isn’t in a module already)
+    - Add your code to a module for dependency tracking (if it isn't in a module already)
     - Add external packages as dependencies so you can manage them
     - Upgrade or downgrade dependency versions as needed over time
 
@@ -30,19 +30,19 @@
 - **Indirect Dependency (`// indirect`)**
     - A dependency not directly used in your code and used by your direct dependencies
 - The code written by a dynamic community might be efficiently maintained
-    - An important criterion when choosing a dependency is to check the community’s dynamism around the project
-    - A trendy project with many contributions might be “safer” than another maintained by a couple of developers
+    - An important criterion when choosing a dependency is to check the community's dynamism around the project
+    - A trendy project with many contributions might be "safer" than another maintained by a couple of developers
 
 ## Go Module
 - A dependency management system in Go that makes dependency version information and easier to manage
-- It is identified by a string which is called the “module path” and the requirements (if any) of the module are listed in a specific file
+- It is identified by a string which is called the "module path" and the requirements (if any) of the module are listed in a specific file
 - A module is a collection of Go packages stored in a file tree with a `go.mod` file at its root and it can be dependent on other modules
 - **`go.mod`**
-    - It defines the module’s module path and its dependency requirements (`module github.com/your_github_username/repo`)
+    - It defines the module's module path and its dependency requirements (`module github.com/your_github_username/repo`)
     - Each dependency requirement is written as a module path and a specific semantic version
 - **`go.sum`**
     - It will contain cryptographic hashes of the module _direct_ and _indirect_ dependencies
-    - `go.sum` will record the checksum of the module version used, but also the checksum of the `go.mod` file of the module; that’s why we have two lines per module
+    - `go.sum` will record the checksum of the module version used, but also the checksum of the `go.mod` file of the module; that's why we have two lines per module
         ```
         github.com/your_github_username/repo v1.0.0 h1:sIEfKULMonD3L9COiI2GyGN7Sdz
         github.com/your_github_username/repo v1.0.0/go.mod h1:+IP28RhAFM6FlBl5iSYC
@@ -183,9 +183,9 @@ Use "go help <topic>" for more information about that topic.
 ```
 
 ### Private Package Dependencies
-- **Issue**: Go doesn’t have the credentials to download it
-- To use a private module, **you’ll need to have access to a private Go module**
-- If you try to `go get` your private module into another module, you’ll likely see an error similar to:
+- **Issue**: Go doesn't have the credentials to download it
+- To use a private module, **you'll need to have access to a private Go module**
+- If you try to `go get` your private module into another module, you'll likely see an error similar to:
     ```bash
     $ go get github.com/your_github_username/mysecret
     go get: module github.com/your_github_username/mysecret: git ls-remote -q origin in /Users/your_github_username/go/pkg/mod/cache/vcs/2f8c...b9ea: exit status 128:
@@ -194,7 +194,7 @@ Use "go help <topic>" for more information about that topic.
     If this is a private repository, see <https://golang.org/doc/faq#git_https> for additional information.
     ```
     
-    Go is calling Git for you and can’t prompt them. At this point, to access your module, you’ll need to provide a way for Git to retrieve your credentials without your immediate input
+    Go is calling Git for you and can't prompt them. At this point, to access your module, you'll need to provide a way for Git to retrieve your credentials without your immediate input
     
 - **Providing Private Module Credentials**
     - **For HTTPS: `.netrc` file**
@@ -221,14 +221,14 @@ Use "go help <topic>" for more information about that topic.
 
 ### Version Tag `git commit`
 - Tagging is generally used to capture a point in history that is used for a marked version release (e.g. `v1.0.1`)
-- A tag is like a branch that doesn’t change
+- A tag is like a branch that doesn't change
 - It can designate a **released version** or a **pre-released version** of the software
     - **Pre-release version (or release candidate)**
         - Considered to be ready and is made available for last minutes tests
         - Not considered as a stable release
         - Have specific tags with appended characters (e.g. `1.0.0-alpha`, `1.0.0-alpha.1`)
 - **Untagged version** is a specific state of the program at a given time
-    - In the Git VCS, it is a “**commit**” and it will identify each commit with a SHA1 checksum (e.g. `409d7a2e37605dc5838794cebace764ea4022388`)
+    - In the Git VCS, it is a "**commit**" and it will identify each commit with a SHA1 checksum (e.g. `409d7a2e37605dc5838794cebace764ea4022388`)
 
 #### Creating a tag
 - **Syntax**
@@ -237,7 +237,7 @@ Use "go help <topic>" for more information about that topic.
     $ git tag <tag-name>
     ```
 - Tagging a version in Git
-    - Ensure you’re in the branch you want to tag
+    - Ensure you're in the branch you want to tag
         ```bash
         # Check in which branch you are in
         $ git branch --show-current
@@ -270,8 +270,8 @@ Use "go help <topic>" for more information about that topic.
 
 #### Lightweight Tags vs Annotated Tags
 - **Lightweight Tags**
-    - Are essentially ‘bookmarks’ to a commit, they are just a name and a pointer to a commit, useful for creating quick links to relevant commits
-    - Creates a new tag checksum and store it in the `.git/` directory of the project’s repository
+    - Are essentially ‘bookmarks' to a commit, they are just a name and a pointer to a commit, useful for creating quick links to relevant commits
+    - Creates a new tag checksum and store it in the `.git/` directory of the project's repository
     - **Syntax**
         ```bash
         # This will create a lightweight tag

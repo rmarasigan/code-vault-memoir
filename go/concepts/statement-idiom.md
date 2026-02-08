@@ -11,7 +11,7 @@
     }
     ```
     
-- This is also like the “[Comma OK Idiom](https://www.notion.so/Comma-OK-Idiom-19b3c7ef4afb803ea114cdf76bf6cfb1?pvs=21)” and it follows a specific syntax:
+- This is also like the "[Comma OK Idiom](comma-ok-idiom.md)" and it follows a specific syntax:
     ```go
     value, ok := expression
     ```
@@ -22,7 +22,7 @@
 ## **Use Cases**
 ### Map Key Lookup
 - When retrieving a value from a `map`, the Comma OK idiom allows you to check if the key exists in the map
-- Allows you to differentiate between a key that doesn’t exist and a key that exists with a zero value, thereby avoiding incorrect assumptions in your code
+- Allows you to differentiate between a key that doesn't exist and a key that exists with a zero value, thereby avoiding incorrect assumptions in your code
 
 ```go
 value, ok := myMap[key]
@@ -62,7 +62,7 @@ if !ok {
 ```
 
 ### Comma OK with Blank Identifier
-- You can use the blank identifier (`_`) when you only care about the boolean result of the Comma OK idiom and don’t need to use the value itself
+- You can use the blank identifier (`_`) when you only care about the boolean result of the Comma OK idiom and don't need to use the value itself
 - Allows you to check for the existence of a key without assigning the value to a variable
 - Particularly useful when the value is not needed but you still want to confirm the presence of the key
 

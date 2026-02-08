@@ -16,7 +16,7 @@
     - Resulting checksums are vulnerable to length extension attacks, which involve a hacker reconstructing the internal state of a file by learning its hash digest
     - **Example (SHA-256)**: `a971e147ef8f411b4a2476bba1de26b9a9a84553c43a90204f662ca72ee93910`
 - **Message Digest 5 (MD5)**
-    - Creates a checksum value, but each file won’t necessarily have a unique number
+    - Creates a checksum value, but each file won't necessarily have a unique number
     - Open to vulnerabilities if a hacker swaps out a file with the same checksum value
     - **Example**: `120EA8A25E5D487BF68B5F7096440019` → This is a test
 
