@@ -1,3 +1,5 @@
+# Understanding Scope
+
 The scope of a declared identifier is the extent of a source text in which the identifier denotes the specified constant, type, variable, function, label, or package.
 
 Go is lexically scoped using [^1]blocks:

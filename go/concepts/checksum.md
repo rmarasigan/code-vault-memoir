@@ -1,3 +1,5 @@
+# Checksum
+
 - A value that represents the number of bits in a transmission message and is used by IT professionals to detect high-level errors within data transmissions
 - The term _**checksum**_ is also sometimes called _**hash sum**_ or _**hash value**_
 - Typically a long string of letters and numbers that **acts as a sort of fingerprint** for a file or set of files to indicate the number of bits included in the transmission

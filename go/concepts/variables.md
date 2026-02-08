@@ -1,10 +1,5 @@
----
-Tags:
-  - Basics
-  - Notes
-Created: 23-November-2025 16:28:52
-Modified: 08-February-2026 11:07:17
----
+# Variables
+
 - Provide the ability to read from and write to memory
 - Access to memory is type-safe, this means that the compiler takes type seriously and won't allow us to use variables outside the scope of how they are declared
 - Use the keyword `var` when variables are being declared to their zero value
@@ -99,14 +94,15 @@ func main() {
 ## Zero Value Concept
 - Zero value is the setting of every bit in every byte to zero.
 
-| Type    | Zero Value |
-|---------|------------|
-| bool    | false      |
-| int     | 0          |
-| float   | 0          |
-| complex | 0i         |
-| string  | "" (empty) |
-| Pointer | nil        |
+    | Type    | Zero Value |
+    |---------|------------|
+    | bool    | false      |
+    | int     | 0          |
+    | float   | 0          |
+    | complex | 0i         |
+    | string  | "" (empty) |
+    | Pointer | nil        |
+
 - `string` uses the UTF-8 character set and is a two-word internal data structure
     - First word = pointer to a backing array of bytes
     - Second word = length or the number of bytes in the backing array
@@ -299,6 +295,7 @@ func (r Rectangle) Size() Point {...}
             // syntax error: unexpected ++, expecting expression
             y := x++
             ```
+
 ## 🔖 Extras
 - [What's in a name?](https://go.dev/talks/2014/names.slide#1)
 - [Type assertions vs. type conversions](https://blog.logrocket.com/type-assertions-vs-type-conversions-go/)

@@ -1,3 +1,4 @@
+# Comma OK Idiom
 - Also known as the **comma ok pattern**
 - In this, an operation might return an optional value and the second return value will be a boolean (ok) indicating whether the operation succeeded or not
     ```go

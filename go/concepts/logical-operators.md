@@ -1,3 +1,5 @@
+# Logical Operators
+
 - Apply to boolean values and yield a result of the same type as the operands
     - `&&` AND
         - `true && true` = `true`

@@ -1,3 +1,5 @@
+# `switch` Statement
+
 - Allows a program to evaluate an expression or variable and then selectively execute different blocks of code based on the value of the expression or variable
 - Provides a convenient way to write code that performs different actions based on a single variable or expression without having to use multiple `if`/`else` statements
 - Typically consists of a single expression or variable followed by a series of `case` statements that specify the different values that the expression or variable can take and the corresponding blocks of code to execute in each case
