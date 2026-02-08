@@ -1,10 +1,3 @@
----
-Tags:
-  - Notes
-  - Basics
-Created: 23-November-2025 16:28:36
-Modified: 08-February-2026 10:20:30
----
 ## Conversion
 - A conversion **changes the type of an expression** to the type specified by the conversion
 - It may appear literally in the source, or it may be implied by the context in which an expression appears
@@ -108,7 +101,7 @@ const greeting string = "Hello, 世界"
 - **Byte Buffer**
     - A **region of memory** used to **temporarily store a sequence of bytes**. It provides a data structure for efficient manipulation of byte data.
     - Allows you to read and write bytes to and from the buffer, making it useful for tasks like data serialization, network communication, file I/O, and efficient string manipulation.
-    - The purpose of a byte buffer is to **provide a flexible and efficient way to work with sequences of bytes**. It typically offers methods or functions for operations such as appending data, reading data, resizing the buffer, and converting the buffer’s contents to different types.
+    - The purpose of a byte buffer is to **provide a flexible and efficient way to work with sequences of bytes**. It typically offers methods or functions for operations such as appending data, reading data, resizing the buffer, and converting the buffer's contents to different types.
     - In Go, `bytes.Buffer` is a type that provides a way to manipulate in-memory buffers. It is part of the standard library packages called `bytes`. You can perform various operations on it. Some common operations include:
         - `Write` or `WriteString`: Appending data to the buffer
         - `Read` or `ReadString`: Reading data from the buffer
@@ -178,8 +171,8 @@ const greeting string = "Hello, 世界"
         - **Dynamic-length and dynamic-capacity** container types (e.g. `[]T`)
         - Represent **variable-length sequences** whose elements all have the same type
         - Internally consist of three components
-            - **Pointer**: **Points to the first element of the array** that is reachable through the slice, which is not necessarily the array’s first element
-            - **Length**: The number of slice elements, and **can’t exceed the capacity**
+            - **Pointer**: **Points to the first element of the array** that is reachable through the slice, which is not necessarily the array's first element
+            - **Length**: The number of slice elements, and **can't exceed the capacity**
             - **Capacity**: The **number of elements** between the start of the slice and the end of the underlying array
     - **Map Types**
         - Maps are associated arrays (or dictionaries)

@@ -1,13 +1,6 @@
----
-Tags:
-  - Notes
-  - Basics
-Created: 23-November-2025 16:29:48
-Modified: 08-February-2026 11:10:29
----
 The scope of a declared identifier is the extent of a source text in which the identifier denotes the specified constant, type, variable, function, label, or package.
 
-Go is lexically scoped using blocks:
+Go is lexically scoped using [^1]blocks:
 - The scope of a predeclared/built-in identifier is the **universe block**
     - Built-in Identifiers:
         - Types: `bool`, `int32`, `int64`, `float64`, `error`, `string`, `rune`, `any`, `uint`, …
@@ -272,3 +265,5 @@ var PublicVar = "This is a public variable"
 - [Code Blocks and Identifier Scopes](https://go101.org/article/blocks-and-scopes.html)
 - [learn-to-code-go-version-03/031-scope/](https://github.com/GoesToEleven/learn-to-code-go-version-03/tree/main/031-scope)
 - [Golang Quick Reference: Packages and Scopes](https://medium.com/@cndf.dev/golang-quick-reference-packages-and-scopes-5d9e449c4844)
+
+[^1]: A possibly empty sequence of declarations and statements within matching brace brackets.

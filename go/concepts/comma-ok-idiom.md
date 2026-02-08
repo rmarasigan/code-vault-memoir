@@ -1,16 +1,9 @@
----
-Tags:
-  - Notes
-  - Basics
-Created: 23-November-2025 16:30:06
-Modified: 08-February-2026 11:12:14
----
 - Also known as the **comma ok pattern**
 - In this, an operation might return an optional value and the second return value will be a boolean (ok) indicating whether the operation succeeded or not
     ```go
     value, ok := expression
     ```
-    - `value` — outcome of the operation if it’s successful
+    - `value` — outcome of the operation if it's successful
     - `ok` — indicates whether the action was successful (`true` or `false`)
     - `expression` — operation being performed, which typically involves lookup, type assertion, channel receive, or any function that might fail
 
@@ -30,7 +23,7 @@ func offset(tz string) int {
 ## Use Cases
 ### Map Key Lookup
 - It allows you to check if the key exists in the map to retrieve the value
-- It allows you differentiate between a key that doesn’t exist and a key that exists with a zero value, thereby avoiding incorrect assumptions in your code
+- It allows you differentiate between a key that doesn't exist and a key that exists with a zero value, thereby avoiding incorrect assumptions in your code
 
 ```go
 value, ok := myMap[key]
