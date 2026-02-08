@@ -1,4 +1,4 @@
-# Dependency Maagement
+# Dependency Management
 
 - The process of identifying, organizing, and resolving the external code libraries and packages that a software application or project depends upon
 - It is important because it ensures that all required libraries and packages are available and compatible with each other and that any updates or changes to those dependencies are managed and controlled to prevent issues that could arise due to conflicting versions or changes

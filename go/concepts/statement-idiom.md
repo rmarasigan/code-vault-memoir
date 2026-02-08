@@ -1,3 +1,5 @@
+# Statement Idiom
+
 - In an `if` statement, the expression may be preceded by a simple statement, which executes before the expression is evaluated
     ```go
     x := 40
