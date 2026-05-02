@@ -30,6 +30,9 @@ Code Vault Memoir is a compilation of 'How-To's', notes, or summaries related to
 * [Bump Go Version](go/bump-go-version.md)
 * [DynamoDB with AWS Go SDK](go/dynamodb-with-aws-go-sdk.md)
 
+### Python
+* [Linux Python Installation](python/python-installation.md)
+
 ### MySQL
 * [Linux MySQL Installation](mysql/mysql-installation.md)
 * [Linux MySQL 8.0.35 Reset Password](mysql/mysql-reset-password.md)
