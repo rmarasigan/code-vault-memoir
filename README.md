@@ -51,3 +51,4 @@ Code Vault Memoir is a compilation of 'How-To's', notes, or summaries related to
 * [Golang](resources/golang-resources.md)
 * [Blog / Articles](resources/blogs-articles.md)
 * [Refactoring / Design Patterns / System Design](resources/refactoring-design-patterns-system-design.md)
+* [Others](resources/others.md)
